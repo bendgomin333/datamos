@@ -7,7 +7,9 @@ import { Loader } from "../loader/ui"
 import { InitMapEvents } from "./model"
 import styles from './styles.module.scss'
 
-
+// @ts-ignore
+// eslint-disable-next-line import/no-webpack-loader-syntax, import/no-unresolved
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 export const Map = () => {
     const dataset = useAppSelector(({ dataset }) => dataset.selectedDataset)
