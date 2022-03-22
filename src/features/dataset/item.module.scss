@@ -1,0 +1,25 @@
+.datasetItem {
+    line-height: 26px;
+    padding: 4px 8px 4px 24px;
+    cursor: pointer;
+    &:hover {
+        background-color: rgba(152, 146, 221, 0.959);
+        color: #fff;
+    }
+}
+
+.datasetItem:not(:last-of-type) {
+    border-bottom: 1px solid rgba(23, 20, 41, 0.151);
+}
+
+.selectedDataset {
+    background-color: rgba(152, 146, 221, 0.959);
+    color: #fff;
+}
+
+@media all and (max-width: 1440px) {
+    .datasetItem {
+        font-size: 13px;
+        line-height: 22px;
+    }
+}

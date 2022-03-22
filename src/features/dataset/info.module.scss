@@ -1,0 +1,98 @@
+.datasetInfo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background-color: #f1f1f1;
+    width: 400px;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+    padding-top: 12px;
+}
+
+.infoHeader {
+    text-align: center;
+    padding: 8px;
+}
+
+.infoTitle {
+    cursor: pointer;
+    padding: 8px;
+    &:hover {
+        background-color: #9b95dd;
+        color: #fff;
+    }
+    &[data-expanded="true"] {
+        background-color: #473db1;
+        color: #fff;
+    }
+}
+
+.infoDescription {
+    padding: 4px;
+    font-size: 12px;
+    ul {
+        padding-left: 20px;
+    }
+}
+
+.infoItem:not(:last-of-type) {
+    border-bottom: 1px solid rgba(23, 20, 41, 0.151);
+}
+
+.closeBtn {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+
+    &::after,
+    &::before {
+        background-color: #1d1c2b;
+        position: absolute;
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        content: "";
+        width: 25px;
+        height: 3px;
+        top: 11px;
+    }
+    &::before {
+        content: "";
+        width: 3px;
+        height: 25px;
+        left: 11px;
+    }
+}
+
+@media all and (max-width: 1440px) {
+    .datasetInfo {
+        width: 320px;
+    }
+    .infoTitle {
+        font-size: 14px;
+    }
+    .infoHeader {
+        font-size: 16px;
+        padding: 4px;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .datasetInfo {
+        width: 100%;
+        z-index: 11;
+    }
+    .infoTitle {
+        font-size: 14px;
+    }
+    .infoHeader {
+        font-size: 16px;
+        padding: 4px;
+    }
+}
+

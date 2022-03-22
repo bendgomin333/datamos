@@ -1,0 +1,12 @@
+*:not(li, ul) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", "sans-serif";
+    color: rgb(29, 28, 43);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
