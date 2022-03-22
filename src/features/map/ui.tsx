@@ -1,5 +1,5 @@
 import mapboxgl from "mapbox-gl"
-import React, { useEffect, useRef } from "react"
+import { useEffect, useRef } from "react"
 import { AddLayerFromSource, ClearMap } from "."
 import { useAppDispatch, useAppSelector } from "../../app/hooks"
 import { datasetApi } from "../dataset"

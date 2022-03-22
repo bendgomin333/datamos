@@ -1,4 +1,3 @@
-import { Header } from "../header"
 import { Routing } from "../routing"
 
 export const Layout = () => {

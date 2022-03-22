@@ -1,8 +1,8 @@
 import { useCallback } from "react"
-import { datasetSlice, IDataset } from "."
+import { IDataset } from "."
 import { useAppDispatch, useAppSelector } from "../../app/hooks"
 import styles from './item.module.scss'
-import { setDisabled, setSelected } from "./slice"
+import { setSelected } from "./slice"
 
 type TProps = {
     item: IDataset

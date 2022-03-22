@@ -17,9 +17,6 @@ export const DatasetList = ({ categoryId }: TProps) => {
 
     const { list } = datasetApi.useGetFilteredDatasetsQuery(undefined, {
         selectFromResult: selectDatasetByCatalogId
-        // selectFromResult: (result) => ({
-        //     list: result.data!.filter(dataset => dataset.CategoryId === categoryId)
-        // })
     })
 
 

@@ -1,6 +1,5 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit"
+import { createSlice } from "@reduxjs/toolkit"
 import mapboxgl from "mapbox-gl"
-import React from "react"
 import { AppDispatch } from "../../app/store"
 import { setSelectedFeatures } from "../dataset/slice"
 

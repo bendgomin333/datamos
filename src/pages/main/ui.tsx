@@ -4,7 +4,6 @@ import { CategoryList } from "../../features/category"
 import { DatasetInfo } from "../../features/dataset"
 import { Map } from "../../features/map"
 import styles from './styles.module.scss'
-import MenuIcon from './menu.svg'
 
 const menuBtnHandler = (translate: number, setter: (value: React.SetStateAction<number>) => void) => {
     translate < 0 ? setter(0) : setter(-500)

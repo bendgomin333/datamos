@@ -1,5 +1,4 @@
-import { categoryApi, CategoryItem, categorySelectors } from "."
-import { useAppSelector } from "../../app/hooks"
+import { categoryApi, CategoryItem } from "."
 import { datasetApi } from "../dataset"
 import styles from "./list.module.scss"
 
@@ -8,9 +7,6 @@ export const CategoryList = () => {
     const categories = categoryApi.useGetAllCategoriesQuery(undefined, {
         skip: datasets.isLoading || datasets.isFetching
     })
-
-    // const categoriesLength = useAppSelector(state => categorySelectors.selectAll(state.category))
-    // console.log(categoriesLength)
 
     if (categories.isLoading) {
         return <div>Loading</div>

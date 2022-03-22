@@ -1,5 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { rootApi, RootState } from "../../app/store";
+import { rootApi } from "../../app/store";
 
 export interface ICategory {
     // Datasets: number[],
